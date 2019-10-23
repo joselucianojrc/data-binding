@@ -2,13 +2,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { DataBindingComponent } from './data-binding/data-binding.component';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataBindingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    TooltipModule.forRoot()
+
   ],
   providers: [],
   bootstrap: [AppComponent]

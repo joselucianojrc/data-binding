@@ -1,0 +1,27 @@
+<p>data-binding works!</p>
+
+
+<section class="Property-binding">
+    <article>
+        <h3>Interpolation / Interpolação</h3>
+        <p>String renderizada com interpolação: {{ url }}</p>
+        <p>Resultado de 1 + 1 é: {{ 1 + 1 }}</p>
+        <p>Resultado de 1 + 1 não é {{ 1 + 1 + getValor() }}</p>
+        <p>Curso de Angular e gosto do curso: {{ cursoAngular && getCurtirCurso() }}</p>
+    </article>
+
+    <article>
+            <h3>Property Binding</h3>
+            <img src="{{ urlImagem }}">
+            <img [src]="urlImagem">
+            <img bind-src="urlImagem">
+    </article>
+    <article>
+            <button type="button" class="btn btn-primary"
+            tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Simple demo
+    </button>
+    </article>
+</section>
+
+
